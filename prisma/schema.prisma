@@ -1,0 +1,100 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Topic {
+  id          Int       @id @default(autoincrement())
+  slug        String    @unique
+  name        String
+  description String
+  cefrRange   String
+  isActive    Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  exercises   Exercise[]
+  attempts    Attempt[]
+  topicStats  TopicStats?
+}
+
+model Exercise {
+  id                 Int      @id @default(autoincrement())
+  topicId            Int
+  difficulty         String
+  type               String
+  prompt             String
+  instructions       String
+  questionData       String
+  correctAnswer      String
+  explanationCorrect String
+  explanationWrong   String
+  ruleSummary        String
+  extraExample       String
+  tags               String
+  sourceType         String
+  isActive           Boolean  @default(true)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  topic              Topic    @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  attempts           Attempt[]
+}
+
+model StudySession {
+  id             Int       @id @default(autoincrement())
+  sessionDate    DateTime
+  mode           String
+  assignedTopics String
+  completed      Boolean   @default(false)
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  attempts       Attempt[]
+}
+
+model Attempt {
+  id              Int          @id @default(autoincrement())
+  sessionId       Int
+  exerciseId      Int
+  topicId         Int
+  userAnswer      String
+  isCorrect       Boolean
+  selfRating      Int?
+  writtenResponse String?
+  feedbackShown   Boolean      @default(false)
+  createdAt       DateTime     @default(now())
+  session         StudySession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  exercise        Exercise     @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  topic           Topic        @relation(fields: [topicId], references: [id], onDelete: Cascade)
+}
+
+model TopicStats {
+  id                Int      @id @default(autoincrement())
+  topicId           Int      @unique
+  totalAttempts     Int      @default(0)
+  totalCorrect      Int      @default(0)
+  totalIncorrect    Int      @default(0)
+  accuracy          Float    @default(0)
+  lastStudiedAt     DateTime?
+  currentStreak     Int      @default(0)
+  weakestDifficulty String?
+  updatedAt         DateTime @updatedAt
+  topic             Topic    @relation(fields: [topicId], references: [id], onDelete: Cascade)
+}
+
+model DailyAssignmentHistory {
+  id             Int      @id @default(autoincrement())
+  assignmentDate DateTime @unique
+  topicIds       String
+  createdAt      DateTime @default(now())
+}
+
+model AppSettings {
+  id                 Int      @id
+  defaultDailyTopics Int      @default(3)
+  intensiveMode      Boolean  @default(false)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
