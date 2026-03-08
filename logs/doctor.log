@@ -1,0 +1,22 @@
+[2026-03-07 22:13:54.01] ==============================================
+[2026-03-07 22:13:54.28] DOCTOR diagnostics start
+[2026-03-07 22:13:54.58] ==============================================
+[2026-03-07 22:13:54.95] [PASS] Node.js installed
+[2026-03-07 22:13:55.16] [PASS] npm installed
+[2026-03-07 22:13:55.29] RUN: Node.js version
+[2026-03-07 22:13:55.38] CMD: node -v
+v22.17.0
+[2026-03-07 22:13:55.59] [PASS] Node.js version
+[2026-03-07 22:13:55.67] RUN: npm version
+[2026-03-07 22:13:55.78] CMD: npm -v
+[PASS] node_modules exists
+[PASS] .env exists
+[FAIL] Database file not found (migration may have failed)
+[2026-03-07 22:13:56.31] CMD: node -e \"const>> "E:\Grammar\logs\doctor.log"
+[FAIL] List npm scripts
+[PASS] Port 3000 is free
+[FAIL] App did not start listening on port 3000 within 10 seconds
+
+Diagnostics complete. Check:
+  E:\Grammar\logs\doctor.log
+  E:\Grammar\logs\doctor-error.log
