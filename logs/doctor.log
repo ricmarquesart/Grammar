@@ -20,3 +20,25 @@ v22.17.0
 Diagnostics complete. Check:
   E:\Grammar\logs\doctor.log
   E:\Grammar\logs\doctor-error.log
+[2026-03-07 22:26:26.74] ==============================================
+[2026-03-07 22:26:26.75] DOCTOR diagnostics start
+[2026-03-07 22:26:26.76] ==============================================
+[2026-03-07 22:26:26.83] [PASS] Node.js installed
+[2026-03-07 22:26:26.90] [PASS] npm installed
+[2026-03-07 22:26:26.91] RUN: Node.js version
+[2026-03-07 22:26:26.91] CMD: node -v
+v22.17.0
+[2026-03-07 22:26:26.95] [PASS] Node.js version
+[2026-03-07 22:26:26.96] RUN: npm version
+[2026-03-07 22:26:26.97] CMD: npm -v
+[PASS] node_modules exists
+[PASS] .env exists
+[PASS] Database file exists: prisma\\dev.db
+[2026-03-07 22:26:27.01] CMD: node -e \"const>> "E:\Grammar\logs\doctor.log"
+[FAIL] List npm scripts
+[PASS] Port 3000 is free
+[FAIL] App did not start listening on port 3000 within 10 seconds
+
+Diagnostics complete. Check:
+  E:\Grammar\logs\doctor.log
+  E:\Grammar\logs\doctor-error.log
