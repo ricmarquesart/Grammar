@@ -1,13 +1,13 @@
-[2026-03-07 22:12:10.41] ==============================================
-[2026-03-07 22:12:10.67] CELPIP Grammar Study - First Time Setup
-[2026-03-07 22:12:10.76] ==============================================
-[2026-03-07 22:12:10.84] Step 1/8: Checking Node.js
+[2026-03-07 22:33:01.02] ==============================================
+[2026-03-07 22:33:01.10] CELPIP Grammar Study - First Time Setup
+[2026-03-07 22:33:01.23] ==============================================
+[2026-03-07 22:33:01.33] Step 1/8: Checking Node.js
 C:\Program Files\nodejs\node.exe
 v22.17.0
-[2026-03-07 22:12:11.15] Step 2/8: Preparing .env file
-[2026-03-07 22:12:11.36] [OK] .env created
-[2026-03-07 22:12:11.43] Step 3/8: Installing packages
-[2026-03-07 22:12:11.50] Command: npm install
+[2026-03-07 22:33:01.61] Step 2/8: Preparing .env file
+[2026-03-07 22:33:01.69] [OK] .env already exists
+[2026-03-07 22:33:01.77] Step 3/8: Installing packages
+[2026-03-07 22:33:01.84] Command: npm install
 
 > celpip-grammar-mvp@1.0.0 postinstall
 > prisma generate
@@ -15,111 +15,11 @@ v22.17.0
 Environment variables loaded from .env
 Prisma schema loaded from prisma\schema.prisma
 
-✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 504ms
+✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 541ms
 
 Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
 
-Tip: Want to react to database changes in your app as they happen? Discover how with Pulse: https://pris.ly/tip-1-pulse
-
-
-added 40 packages, and audited 41 packages in 4m
-
-5 packages are looking for funding
-  run `npm fund` for details
-
-1 critical severity vulnerability
-
-To address all issues, run:
-  npm audit fix --force
-
-Run `npm audit` for details.
-[2026-03-07 22:15:51.40] [OK] Step 3/8: Installing packages
-[2026-03-07 22:15:51.41] Step 4/8: Generating Prisma client
-[2026-03-07 22:15:51.42] Command: npx prisma generate
-Environment variables loaded from .env
-Prisma schema loaded from prisma\schema.prisma
-
-✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 561ms
-
-Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
-
-Tip: Easily identify and fix slow SQL queries in your app. Optimize helps you enhance your visibility: https://pris.ly/--optimize
-
-[2026-03-07 22:15:53.73] [OK] Step 4/8: Generating Prisma client
-[2026-03-07 22:15:53.75] Step 5/8: Validating Prisma schema
-[2026-03-07 22:15:53.76] Command: npx prisma validate
-Environment variables loaded from .env
-Prisma schema loaded from prisma\schema.prisma
-The schema at prisma\schema.prisma is valid 🚀
-[2026-03-07 22:15:55.24] [OK] Step 5/8: Validating Prisma schema
-[2026-03-07 22:15:55.26] Step 6/8: Running database migration
-[2026-03-07 22:15:55.26] Command: npx prisma migrate dev --name init
-Environment variables loaded from .env
-Prisma schema loaded from prisma\schema.prisma
-Datasource "db": SQLite database "dev.db" at "file:./dev.db"
-
-SQLite database dev.db created at file:./dev.db
-
-Applying migration `20260308061556_init`
-
-The following migration(s) have been created and applied from new schema changes:
-
-migrations/
-  └─ 20260308061556_init/
-    └─ migration.sql
-
-Your database is now in sync with your schema.
-
-Running generate... (Use --skip-generate to skip the generators)
-[2K[1A[2K[GRunning generate... - Prisma Client
-[2K[1A[2K[G✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 402ms
-
-
-Running seed command `tsx prisma/seed.ts` ...
-Seed complete: 26 topics, 120 exercises.
-
-The seed command has been executed.
-
-[2026-03-07 22:16:26.72] [OK] Step 6/8: Running database migration
-[2026-03-07 22:16:26.75] Step 7/8: Seeding database
-[2026-03-07 22:16:26.76] Command: npx prisma db seed
-Environment variables loaded from .env
-Running seed command `tsx prisma/seed.ts` ...
-Seed complete: 26 topics, 120 exercises.
-
-The seed command has been executed.
-[2026-03-07 22:16:56.49] [OK] Step 7/8: Seeding database
-[2026-03-07 22:16:56.51] Step 8/8: Creating desktop shortcuts
-[2026-03-07 22:16:56.91] [OK] Desktop shortcut created: CELPIP Grammar Study
-[2026-03-07 22:16:57.27] [OK] Desktop shortcut created: Close CELPIP Grammar Study
-[2026-03-07 22:16:57.63] [OK] Desktop shortcut created: CELPIP Grammar Doctor
-[2026-03-07 22:16:57.63] Opening app...
-[INFO] App logs:
-       E:\Grammar\logs\app.log
-       E:\Grammar\logs\app-error.log
-Starting CELPIP Grammar Study...
-[2026-03-07 22:23:43.08] ==============================================
-[2026-03-07 22:23:43.08] CELPIP Grammar Study - First Time Setup
-[2026-03-07 22:23:43.29] ==============================================
-[2026-03-07 22:23:43.31] Step 1/8: Checking Node.js
-C:\Program Files\nodejs\node.exe
-v22.17.0
-[2026-03-07 22:23:43.42] Step 2/8: Preparing .env file
-[2026-03-07 22:23:43.43] [OK] .env already exists
-[2026-03-07 22:23:43.44] Step 3/8: Installing packages
-[2026-03-07 22:23:43.45] Command: npm install
-
-> celpip-grammar-mvp@1.0.0 postinstall
-> prisma generate
-
-Environment variables loaded from .env
-Prisma schema loaded from prisma\schema.prisma
-
-✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 1.01s
-
-Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
-
-Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
 
 
 up to date, audited 41 packages in 3s
@@ -133,27 +33,27 @@ To address all issues, run:
   npm audit fix --force
 
 Run `npm audit` for details.
-[2026-03-07 22:23:47.11] [OK] Step 3/8: Installing packages
-[2026-03-07 22:23:47.13] Step 4/8: Generating Prisma client
-[2026-03-07 22:23:47.14] Command: npx prisma generate
+[2026-03-07 22:33:05.34] [OK] Step 3/8: Installing packages
+[2026-03-07 22:33:05.35] Step 4/8: Generating Prisma client
+[2026-03-07 22:33:05.36] Command: npx prisma generate
 Environment variables loaded from .env
 Prisma schema loaded from prisma\schema.prisma
 
-✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 357ms
+✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 847ms
 
 Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
 
-Tip: Want real-time updates to your database without manual polling? Discover how with Pulse: https://pris.ly/tip-0-pulse
+Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
 
-[2026-03-07 22:23:49.12] [OK] Step 4/8: Generating Prisma client
-[2026-03-07 22:23:49.13] Step 5/8: Validating Prisma schema
-[2026-03-07 22:23:49.14] Command: npx prisma validate
+[2026-03-07 22:33:07.88] [OK] Step 4/8: Generating Prisma client
+[2026-03-07 22:33:07.90] Step 5/8: Validating Prisma schema
+[2026-03-07 22:33:07.90] Command: npx prisma validate
 Environment variables loaded from .env
 Prisma schema loaded from prisma\schema.prisma
 The schema at prisma\schema.prisma is valid 🚀
-[2026-03-07 22:23:50.50] [OK] Step 5/8: Validating Prisma schema
-[2026-03-07 22:23:50.51] Step 6/8: Running database migration
-[2026-03-07 22:23:50.52] Command: npx prisma migrate dev --name init
+[2026-03-07 22:33:09.35] [OK] Step 5/8: Validating Prisma schema
+[2026-03-07 22:33:09.37] Step 6/8: Running database migration
+[2026-03-07 22:33:09.38] Command: npx prisma migrate dev --name init
 Environment variables loaded from .env
 Prisma schema loaded from prisma\schema.prisma
 Datasource "db": SQLite database "dev.db" at "file:./dev.db"
@@ -162,108 +62,23 @@ Already in sync, no schema change or pending migration was found.
 
 Running generate... (Use --skip-generate to skip the generators)
 [2K[1A[2K[GRunning generate... - Prisma Client
-[2K[1A[2K[G✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 300ms
+[2K[1A[2K[G✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 388ms
 
 
-[2026-03-07 22:23:52.54] [OK] Step 6/8: Running database migration
-[2026-03-07 22:23:52.55] Step 7/8: Seeding database
-[2026-03-07 22:23:52.57] Command: npx prisma db seed
+[2026-03-07 22:33:11.48] [OK] Step 6/8: Running database migration
+[2026-03-07 22:33:11.55] Step 7/8: Seeding database
+[2026-03-07 22:33:11.56] Command: npx prisma db seed
 Environment variables loaded from .env
 Running seed command `tsx prisma/seed.ts` ...
 Seed complete: 26 topics, 120 exercises.
 
 The seed command has been executed.
-[2026-03-07 22:24:20.86] [OK] Step 7/8: Seeding database
-[2026-03-07 22:24:20.88] Step 8/8: Creating desktop shortcuts
-[2026-03-07 22:24:21.27] [OK] Desktop shortcut created: CELPIP Grammar Study
-[2026-03-07 22:24:21.59] [OK] Desktop shortcut created: Close CELPIP Grammar Study
-[2026-03-07 22:24:21.91] [OK] Desktop shortcut created: CELPIP Grammar Doctor
-[2026-03-07 22:24:21.91] Opening app...
-[INFO] App logs:
-       E:\Grammar\logs\app.log
-       E:\Grammar\logs\app-error.log
-Starting CELPIP Grammar Study...
-[2026-03-07 22:24:55.38] ==============================================
-[2026-03-07 22:24:55.39] CELPIP Grammar Study - First Time Setup
-[2026-03-07 22:24:55.40] ==============================================
-[2026-03-07 22:24:55.42] Step 1/8: Checking Node.js
-C:\Program Files\nodejs\node.exe
-v22.17.0
-[2026-03-07 22:24:55.53] Step 2/8: Preparing .env file
-[2026-03-07 22:24:55.54] [OK] .env already exists
-[2026-03-07 22:24:55.56] Step 3/8: Installing packages
-[2026-03-07 22:24:55.57] Command: npm install
-
-> celpip-grammar-mvp@1.0.0 postinstall
-> prisma generate
-
-Environment variables loaded from .env
-Prisma schema loaded from prisma\schema.prisma
-
-✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 354ms
-
-Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
-
-Tip: Curious about the SQL queries Prisma ORM generates? Optimize helps you enhance your visibility: https://pris.ly/tip-2-optimize
-
-
-up to date, audited 41 packages in 3s
-
-5 packages are looking for funding
-  run `npm fund` for details
-
-1 critical severity vulnerability
-
-To address all issues, run:
-  npm audit fix --force
-
-Run `npm audit` for details.
-[2026-03-07 22:24:58.53] [OK] Step 3/8: Installing packages
-[2026-03-07 22:24:58.54] Step 4/8: Generating Prisma client
-[2026-03-07 22:24:58.55] Command: npx prisma generate
-Environment variables loaded from .env
-Prisma schema loaded from prisma\schema.prisma
-
-✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 644ms
-
-Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
-
-Tip: Curious about the SQL queries Prisma ORM generates? Optimize helps you enhance your visibility: https://pris.ly/tip-2-optimize
-
-[2026-03-07 22:25:00.83] [OK] Step 4/8: Generating Prisma client
-[2026-03-07 22:25:00.84] Step 5/8: Validating Prisma schema
-[2026-03-07 22:25:00.85] Command: npx prisma validate
-Environment variables loaded from .env
-Prisma schema loaded from prisma\schema.prisma
-The schema at prisma\schema.prisma is valid 🚀
-[2026-03-07 22:25:02.25] [OK] Step 5/8: Validating Prisma schema
-[2026-03-07 22:25:02.27] Step 6/8: Running database migration
-[2026-03-07 22:25:02.28] Command: npx prisma migrate dev --name init
-Environment variables loaded from .env
-Prisma schema loaded from prisma\schema.prisma
-Datasource "db": SQLite database "dev.db" at "file:./dev.db"
-
-Already in sync, no schema change or pending migration was found.
-
-Running generate... (Use --skip-generate to skip the generators)
-[2K[1A[2K[GRunning generate... - Prisma Client
-[2K[1A[2K[G✔ Generated Prisma Client (v5.22.0) to .\node_modules\@prisma\client in 360ms
-
-
-[2026-03-07 22:25:04.53] [OK] Step 6/8: Running database migration
-[2026-03-07 22:25:04.54] Step 7/8: Seeding database
-[2026-03-07 22:25:04.56] Command: npx prisma db seed
-Environment variables loaded from .env
-Running seed command `tsx prisma/seed.ts` ...
-Seed complete: 26 topics, 120 exercises.
-
-The seed command has been executed.
-[2026-03-07 22:25:33.48] [OK] Step 7/8: Seeding database
-[2026-03-07 22:25:33.49] Step 8/8: Creating desktop shortcuts
-[2026-03-07 22:25:33.83] [OK] Desktop shortcut created: CELPIP Grammar Study
-[2026-03-07 22:25:34.17] [OK] Desktop shortcut created: Close CELPIP Grammar Study
-[2026-03-07 22:25:34.50] [OK] Desktop shortcut created: CELPIP Grammar Doctor
-[2026-03-07 22:25:34.51] Opening app...
+[2026-03-07 22:33:39.94] [OK] Step 7/8: Seeding database
+[2026-03-07 22:33:39.95] Step 8/8: Creating desktop shortcuts
+[2026-03-07 22:33:40.31] [OK] Desktop shortcut created: CELPIP Grammar Study
+[2026-03-07 22:33:40.66] [OK] Desktop shortcut created: Close CELPIP Grammar Study
+[2026-03-07 22:33:41.01] [OK] Desktop shortcut created: CELPIP Grammar Doctor
+[2026-03-07 22:33:41.02] Opening app...
 [INFO] App logs:
        E:\Grammar\logs\app.log
        E:\Grammar\logs\app-error.log
